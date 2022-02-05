@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 import time
 
-#enter required info of the user
+#enter required info of the user into the brackets
 studentID = ""
 srsPassword = ""
 
