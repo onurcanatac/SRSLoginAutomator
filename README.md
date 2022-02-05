@@ -1,5 +1,5 @@
 # SRS Login Automator
-As a personal hobby project, I implemented a webscraper using Python and Selelnium. This program automates the SRS (Student Website of Bilkent University) login process.
+As a personal hobby project, I implemented a webscraper using Python and Selenium. This program automates the SRS (Student Website of Bilkent University) login process.
 
 1. Program opens a new Google Chrome window by a driver, and goes to the SRS login page.
 2. Enters users student ID and password and clicks to the login button.
