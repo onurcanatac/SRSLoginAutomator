@@ -11,7 +11,7 @@ import time
 studentID = ""
 srsPassword = ""
 
-mailAdress = ""
+mailAdress = "" #example@ug.bilkent.edu.tr
 mailPassword = ""
 
 #create driver and get it into SRS
@@ -48,12 +48,15 @@ MailNametextspace.send_keys(mailAdress)
 mailPassScript = 'document.getElementsByName("_pass")[0].setAttribute("value", "' + mailPassword + '")'
 browser.execute_script(mailPassScript)
 
+#wait before entering to the email so that the code mail can come in time
+time.sleep(5)
+
 #click to mail login button and log into the email
 MailLoginButton = browser.find_element_by_xpath('//*[@id="rcmloginsubmit"]')
 MailLoginButton.click()
 
 #wait for a little bit of time in order to avoid the emails with late timing
-time.sleep(8)
+time.sleep(5)
 
 #find the latest received mail and double click onto it, a page comes up with only that mail in it 
 PasswMail = browser.find_element(By.XPATH, '/html/body/div[1]/div[3]/div[4]/table[2]/tbody/tr[1]') # get all of the rows in the table
